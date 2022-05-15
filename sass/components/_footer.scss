@@ -1,0 +1,46 @@
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer__logo {
+  @include logo;
+  margin-bottom: 20px;
+  display: block;
+  &--accent {
+    color: #ffffff;
+  }
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__box {
+  margin-right: 70px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__map {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
