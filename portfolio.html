@@ -19,10 +19,22 @@
 
     <header class="header">
       <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"
+          >Web<span class="header__logo--accent">Studio</span></a
+        >
+        <button type="button" class="menu__btn" data-menu-button>
+          <svg width="24px" height="16px">
+            <use
+              href="./images/sprite.svg#menu-open"
+              class="menu__btn--open"
+            ></use>
+            <use
+              href="./images/sprite.svg#menu-close"
+              class="menu__btn--close"
+            ></use>
+          </svg>
+        </button>
         <nav class="nav">
-          <a class="logo header__logo" href="./index.html"
-            >Web<span class="header__logo--accent">Studio</span></a
-          >
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link " href="./index.html">Студия</a>
@@ -53,6 +65,45 @@
           </li>
         </ul>
       </div>
+      <div class="menu" data-menu>
+        <ul>
+          <li class="menu-nav__item">
+            <a href="./index.html" class="menu-nav__link ">Студия</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="./portfolio.html" class="menu-nav__link menu-nav__link--current">Портфолио</a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="" class="menu-nav__link">Контакты</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="menu-contact__list">
+            <li class="menu-contact__item">
+              <a href="" class="menu-contact__link menu-contact__link--current"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-contact__item">
+              <a href="" class="menu-contact__link">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-social__list">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
 <!-- portfolio -->
@@ -81,9 +132,30 @@
               <li class="project__item">
                 <a href="" class="project__link">
                 <div class="project__thumb">
-                <img src="./images/img8.jpg" 
+                <!-- <img src="./images/img8.jpg" 
                   alt="ноутбук"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img.webp 1x, ./img/mobile/portfolio/img@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img.jpg 1x, ./img/mobile/portfolio/img@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img.webp 1x, ./img/tablet/portfolio/img@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img.jpg 1x, ./img/tablet/portfolio/img@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img.webp 1x, ./img/desktop/portfolio/img@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img.jpg 1x, ./img/desktop/portfolio/img@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
+      
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                   </div>
                   <div class="project__box">
@@ -95,9 +167,29 @@
               <li class="project__item"> 
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img9.jpg" 
+                <!-- <img src="./images/img9.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-1.webp 1x, ./img/mobile/portfolio/img-1@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-1.jpg 1x, ./img/mobile/portfolio/img-1@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-1.webp 1x, ./img/tablet/portfolio/img-1@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-1.jpg 1x, ./img/tablet/portfolio/img-1@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-1.webp 1x, ./img/desktop/portfolio/img-1@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-1.jpg 1x, ./img/desktop/portfolio/img-1@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-1.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -109,10 +201,30 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img10.jpg" 
+                <!-- <img src="./images/img10.jpg" 
                   alt="баскетбол"
-                  />
-                  <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                  /> -->
+
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-2.webp 1x, ./img/mobile/portfolio/img-2@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-2.jpg 1x, ./img/mobile/portfolio/img-2@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-2.webp 1x, ./img/tablet/portfolio/img-2@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-2.jpg 1x, ./img/tablet/portfolio/img-2@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-2.webp 1x, ./img/desktop/portfolio/img-2@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-2.jpg 1x, ./img/desktop/portfolio/img-2@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-2.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>                  <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
                   <h3 class="project__title">Ресторан Seafood</h2>
@@ -123,9 +235,29 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img11.jpg" 
+                <!-- <img src="./images/img11.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-3.webp 1x, ./img/mobile/portfolio/img-3@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-3.jpg 1x, ./img/mobile/portfolio/img-3@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-3.webp 1x, ./img/tablet/portfolio/img-3@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-3.jpg 1x, ./img/tablet/portfolio/img-3@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-3.webp 1x, ./img/desktop/portfolio/img-3@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-3.jpg 1x, ./img/desktop/portfolio/img-3@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-3.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -137,9 +269,29 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img12.jpg" 
+                <!-- <img src="./images/img12.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-4.webp 1x, ./img/mobile/portfolio/img-4@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-4.jpg 1x, ./img/mobile/portfolio/img-4@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-4.webp 1x, ./img/tablet/portfolio/img-4@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-4.jpg 1x, ./img/tablet/portfolio/img-4@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-4.webp 1x, ./img/desktop/portfolio/img-4@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-4.jpg 1x, ./img/desktop/portfolio/img-4@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-4.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -151,9 +303,29 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img13.jpg" 
+                <!-- <img src="./images/img13.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-5.webp 1x, ./img/mobile/portfolio/img-5@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-5.jpg 1x, ./img/mobile/portfolio/img-5@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-5.webp 1x, ./img/tablet/portfolio/img-5@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-5.jpg 1x, ./img/tablet/portfolio/img-5@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-5.webp 1x, ./img/desktop/portfolio/img-5@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-5.jpg 1x, ./img/desktop/portfolio/img-5@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-5.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -165,9 +337,29 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img14.jpg" 
+                <!-- <img src="./images/img14.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-6.webp 1x, ./img/mobile/portfolio/img-6@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-6.jpg 1x, ./img/mobile/portfolio/img-6@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-6.webp 1x, ./img/tablet/portfolio/img-6@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-6.jpg 1x, ./img/tablet/portfolio/img-6@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-6.webp 1x, ./img/desktop/portfolio/img-6@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-6.jpg 1x, ./img/desktop/portfolio/img-6@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-6.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -179,9 +371,29 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img15.jpg" 
+                <!-- <img src="./images/img15.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-7.webp 1x, ./img/mobile/portfolio/img-7@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-7.jpg 1x, ./img/mobile/portfolio/img-7@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-7.webp 1x, ./img/tablet/portfolio/img-7@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-7.jpg 1x, ./img/tablet/portfolio/img-7@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-7.webp 1x, ./img/desktop/portfolio/img-7@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-7.jpg 1x, ./img/desktop/portfolio/img-7@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-7.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -193,9 +405,29 @@
               <li class="project__item">
                   <a href="" class="project__link">
                     <div class="project__thumb">
-                <img src="./images/img16.jpg" 
+                <!-- <img src="./images/img16.jpg" 
                   alt="баскетбол"
-                  />
+                  /> -->
+                  <picture>              
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-8.webp 1x, ./img/mobile/portfolio/img-8@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 767px)"
+                      srcset="./img/mobile/portfolio/img-8.jpg 1x, ./img/mobile/portfolio/img-8@2x.jpg 2x">
+                      
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-8.webp 1x, ./img/tablet/portfolio/img-8@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/tablet/portfolio/img-8.jpg 1x, ./img/tablet/portfolio/img-8@2x.jpg 2x">
+                      <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-8.webp 1x, ./img/desktop/portfolio/img-8@2x.webp 2x" 
+                      type="image/webp">
+                    <source media="(min-width: 1200px)"
+                      srcset="./img/desktop/portfolio/img-8.jpg 1x, ./img/desktop/portfolio/img-8@2x.jpg 2x">
+                      
+                    <img src="./img/mobile/portfolio/img-8.jpg" alt="Ноутбук на нем открыт сайт Технокряк"/>
+                  </picture>
                   <p class="project__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
                   <div class="project__box">
@@ -286,6 +518,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
   </body>
 </html>

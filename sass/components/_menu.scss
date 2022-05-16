@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .menu.is-open {
@@ -29,7 +30,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  z-index: 1;
+  z-index: 2;
   &:hover,
   &:focus {
     fill: var(--focus-text-color);
@@ -46,4 +47,71 @@
 
 .menu__btn.is-open .menu__btn--close {
   display: block;
+}
+
+.menu-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: #212121;
+  &--current {
+    color: #2196f3;
+  }
+}
+
+.menu-contact__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  &--current {
+    font-size: 34px;
+    color: #2196f3;
+  }
+}
+
+.menu-contact__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-contact__list {
+  margin-bottom: 64px;
+}
+
+.menu-social__list {
+  display: flex;
+}
+
+.menu-social__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      right: -10px;
+      top: 0;
+      background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+.menu-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
