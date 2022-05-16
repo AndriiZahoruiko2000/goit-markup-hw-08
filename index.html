@@ -34,7 +34,18 @@
         <a class="logo header__logo" href="./index.html"
           >Web<span class="header__logo--accent">Studio</span></a
         >
-        <button type="button" class="mobile__btn">x</button>
+        <button type="button" class="menu__btn" data-menu-button>
+          <svg width="24px" height="16px">
+            <use
+              href="./images/sprite.svg#menu-open"
+              class="menu__btn--open"
+            ></use>
+            <use
+              href="./images/sprite.svg#menu-close"
+              class="menu__btn--close"
+            ></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -65,6 +76,25 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="menu" data-menu>
+        <ul>
+          <li><a href="">Студия</a></li>
+          <li><a href="">Портфолио</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <div>
+          <ul>
+            <li><a href="">+38 096 111 11 11</a></li>
+            <li><a href="">info@devstudio.com</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -373,7 +403,7 @@
 
     <!--Footer-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__box">
           <a class="footer__logo" href="./index.html">
@@ -449,7 +479,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -511,5 +541,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
