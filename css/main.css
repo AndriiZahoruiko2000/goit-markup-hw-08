@@ -822,12 +822,23 @@ ul {
 }
 
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .clients__list {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    margin-right: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .clients__item {
@@ -835,8 +846,10 @@ ul {
   height: 92px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients__item:not(:last-child) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .clients__link {
